@@ -6,6 +6,9 @@ public class Hocvien {
     public String ten;
     public String tuoi;
 
+    //3 : Cấu trúc cho 1 đối tượng
+
+
     // 2 : Hành vi
 
 
