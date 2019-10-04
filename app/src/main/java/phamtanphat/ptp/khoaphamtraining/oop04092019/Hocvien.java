@@ -1,11 +1,6 @@
 package phamtanphat.ptp.khoaphamtraining.oop04092019;
 
-import android.content.Context;
 import android.util.Log;
-import android.widget.Toast;
-
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
 
 public class Hocvien {
 
@@ -26,6 +21,7 @@ public class Hocvien {
         }else{
            this.ten = ten;
         }
+        Log.d("BBB","Cua hoc vien");
     }
     public String getTen(){
         return ten;

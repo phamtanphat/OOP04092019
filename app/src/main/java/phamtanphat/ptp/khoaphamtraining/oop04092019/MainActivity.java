@@ -51,17 +51,19 @@ public class MainActivity extends AppCompatActivity{
         // Các phương thức nạp chồng sẽ giống nhau về tên , khác nhau
 //        về tham số truyền vào
 
-        tinh(10 , 5);
+//        tinh(10 , 5);
+        Giangvien giangvien = new Giangvien();
+        giangvien.setTen(null);
     }
     // method : tinh
     // dien tich tam giac : a * h / 2
     // chu vi tam giac : a + b + c
-    private void tinh(int canhday , int chieucao){
-        int ketqua = canhday * chieucao / 2;
-        Toast.makeText(this, "Diện tích tam giác " +ketqua, Toast.LENGTH_SHORT).show();
-    }
-    private void tinh(int canhday1 , int canhday2 , int canhday3){
-        int ketqua = canhday1 + canhday2 + canhday3;
-        Toast.makeText(this, "Chu vi tam giác " +ketqua , Toast.LENGTH_SHORT).show();
-    }
+//    private void tinh(int canhday , int chieucao){
+//        int ketqua = canhday * chieucao / 2;
+//        Toast.makeText(this, "Diện tích tam giác " +ketqua, Toast.LENGTH_SHORT).show();
+//    }
+//    private void tinh(int canhday1 , int canhday2 , int canhday3){
+//        int ketqua = canhday1 + canhday2 + canhday3;
+//        Toast.makeText(this, "Chu vi tam giác " +ketqua , Toast.LENGTH_SHORT).show();
+//    }
 }
