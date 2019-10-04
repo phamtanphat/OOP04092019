@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
 
     Button btna;
@@ -23,11 +25,12 @@ public class MainActivity extends AppCompatActivity {
         // Nếu khi so sánh 2 đối tương thì nó chỉ so sánh 2 địa chỉ nhà
         // Nếu như sử dụng toán tử = thì sẽ gán địa chỉ ở cùng với nhau
         Hocvien nguyenvana = new Hocvien("Nguyen Van A","19");
+        Log.d("BBB",nguyenvana.getTen());
 
-        Hocvien nguyenvanb = new Hocvien("Nguyen Van B","21");
-
-        nguyenvana.luatuoi();
-        nguyenvanb.luatuoi();
+//        Hocvien nguyenvanb = new Hocvien("Nguyen Van B","21");
+//
+//        nguyenvana.luatuoi();
+//        nguyenvanb.luatuoi();
 
     }
 }
