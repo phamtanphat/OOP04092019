@@ -12,7 +12,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity{
 
-    Button btna;
+    Integer value = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,8 +52,15 @@ public class MainActivity extends AppCompatActivity{
 //        về tham số truyền vào
 
 //        tinh(10 , 5);
-        Giangvien giangvien = new Giangvien("phat","20");
-        giangvien.setTen("Phat");
+//        Giangvien giangvien = new Giangvien("phat","20");
+//        giangvien.setTen("Phat");
+
+
+        // 3 button : cong tru  reset
+
+        // 1 viet ra 1 phuong thuc : tra ve gia tri ma 3 button gui len
+
+
     }
     // method : tinh
     // dien tich tam giac : a * h / 2
