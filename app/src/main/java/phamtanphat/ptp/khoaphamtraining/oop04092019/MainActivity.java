@@ -10,13 +10,34 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity{
+public class MainActivity extends AppCompatActivity {
 
-    Integer value = 0;
+    Integer mValue = 0;
+    Button mBtnCong,mBtnTru,mReset;
+    OnListenerValue onListenerValue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mBtnCong = findViewById(R.id.buttonCong);
+        mBtnTru = findViewById(R.id.buttonTru);
+        mReset = findViewById(R.id.buttonReset);
+
+        final Giangvien giangvien = new Giangvien("phat","20");
+        //
+        onListenerValue = giangvien;
+
+
+        mBtnCong.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+               onListenerValue.onListenInteger(1);
+               Log.d("BBB",giangvien.getValue() + "");
+            }
+        });
+
+
 
         // 1 : Định nghĩa
         // class : Tập thể , object : cá thể
@@ -62,6 +83,8 @@ public class MainActivity extends AppCompatActivity{
 
 
     }
+
+
     // method : tinh
     // dien tich tam giac : a * h / 2
     // chu vi tam giac : a + b + c
