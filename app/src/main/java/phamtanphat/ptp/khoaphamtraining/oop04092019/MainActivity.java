@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity{
 //        về tham số truyền vào
 
 //        tinh(10 , 5);
-        Giangvien giangvien = new Giangvien();
-        giangvien.setTen(null);
+        Giangvien giangvien = new Giangvien("phat","20");
+        giangvien.setTen("Phat");
     }
     // method : tinh
     // dien tich tam giac : a * h / 2

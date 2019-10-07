@@ -6,14 +6,21 @@ import androidx.annotation.NonNull;
 
 public class Giangvien extends Hocvien{
 
-
+    private String diachi;
     // Alt + insert : Gợi ý chức năng
-
 
     // Ghi đè : sẽ có annotation @Override
     // Khác nhau về thân hàm
+    public Giangvien(String ten , String tuoi ){
+        super(ten,tuoi);
+    }
+    public Giangvien(String ten , String tuoi, String diachi ){
+        super(ten,tuoi);
+        this.diachi = diachi;
+    }
     @Override
     public void setTen(String ten) {
+        super.setTen(ten);
         Log.d("BBB","Giang vien");
     }
 }

@@ -5,14 +5,14 @@ import android.util.Log;
 public class Hocvien {
 
     // 1 : Thuộc tính
-    private String ten;
+    String ten;
     String tuoi;
 
     //3 : Cấu trúc cho 1 đối tượng
-//    public Hocvien(String ten , String tuoi){
-//        this.ten = ten;
-//        this.tuoi = tuoi;
-//    }
+    public Hocvien(String ten , String tuoi){
+        this.ten = ten;
+        this.tuoi = tuoi;
+    }
 
     public void setTen(String ten){
 //        "213213"
@@ -36,5 +36,4 @@ public class Hocvien {
             Log.d("BBB","Người lớn");
         }
     }
-
 }
