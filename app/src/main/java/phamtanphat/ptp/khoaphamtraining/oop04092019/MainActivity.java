@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements OnListenerValue{
+public class MainActivity extends AppCompatActivity{
 
     Integer mValue = 0;
     Button mBtnCong,mBtnTru,mReset;
@@ -26,8 +26,6 @@ public class MainActivity extends AppCompatActivity implements OnListenerValue{
         mBtnTru = findViewById(R.id.buttonTru);
         mReset = findViewById(R.id.buttonReset);
         mTxtKetqua = findViewById(R.id.textviewKetqua);
-
-        onListenerValue = MainActivity.this;
 
 
         mBtnCong.setOnClickListener(new View.OnClickListener() {
@@ -48,16 +46,15 @@ public class MainActivity extends AppCompatActivity implements OnListenerValue{
                 onListenerValue.onListenInteger(0);
             }
         });
-    }
-
-    @Override
-    public void onListenInteger(Integer integer) {
-        if (integer == 0){
-            mValue = 0;
-        }else{
-            mValue += integer;
-        }
-        mTxtKetqua.setText(mValue.toString());
+        getValue(new OnListenerValue() {
+            @Override
+            public void onListenInteger(Integer integer) {
+                Log.d("BBB",integer + " ");
+            }
+        });
 
     }
+   public void getValue(OnListenerValue onListenerValue){
+        this.onListenerValue = onListenerValue;
+   }
 }
