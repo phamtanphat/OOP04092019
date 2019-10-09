@@ -5,5 +5,4 @@ package phamtanphat.ptp.khoaphamtraining.oop04092019;
 public interface OnListenerValue {
     // nhung gia tri lang nghe duoc
     void onListenInteger(Integer integer);
-    void onListenString(String string);
 }

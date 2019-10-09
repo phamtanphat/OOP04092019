@@ -4,10 +4,11 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-public class Giangvien extends Hocvien implements OnListenerValue{
+public class Giangvien extends Hocvien{
 
     private String diachi;
     private Integer value;
+    private OnListenerValue onListenerValue;
     // Alt + insert : Gợi ý chức năng
 
     // Ghi đè : sẽ có annotation @Override
@@ -27,22 +28,11 @@ public class Giangvien extends Hocvien implements OnListenerValue{
         Log.d("BBB","Giang vien");
     }
 
-    public void setInteface(){
-
-    }
 
     public Integer getValue(){
         return  value;
     }
-
-
-    @Override
-    public void onListenInteger(Integer integer) {
-        this.value = integer;
-    }
-
-    @Override
-    public void onListenString(String string) {
-
+    public void setOnListenerValue(OnListenerValue onListenerValue ){
+        this.onListenerValue = onListenerValue;
     }
 }
